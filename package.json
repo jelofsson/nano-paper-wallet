@@ -1,0 +1,31 @@
+{
+  "name": "nano-paper-wallet",
+  "homepage": "https://jelofsson.github.io/nano-paper-wallet",
+  "version": "0.1.0",
+  "private": true,
+  "license": "GPL-3.0",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "qrious": "^4.0.2",
+    "rai-wallet": "^0.2.2",
+    "raiblocks": "^0.3.0",
+    "random-hexadecimal": "^1.0.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "^1.1.1",
+    "react-transition-group": "^2.2.1",
+    "reactstrap": "^5.0.0-beta",
+    "string_decoder": "^1.0.3",
+    "trianglify": "^1.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build&&gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
+}

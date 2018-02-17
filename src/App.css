@@ -1,0 +1,60 @@
+.App {
+  font-size: 12px;
+  font-family: 'Nunito';
+  text-align: center;
+}
+
+.App-logo {
+  width: 50%;
+  max-width: 80%;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-title {
+  display: none;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f5f5f5;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.App > p > * {
+  width: 80%;
+  max-width: 80%;
+  margin: 20px auto 0 auto;
+}
+
+.konvajs-content {
+  width: 100%;
+}
+
+.logo {
+  width: 10px;
+  height: 10px;
+}
+
+.upper {
+  text-transform: uppercase;
+}
