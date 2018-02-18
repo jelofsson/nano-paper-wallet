@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as Trianglify from 'trianglify';
 import QrImage from './qrImage.js';
-import logo from './nanoLogoFull.svg';
+import logo from '../nanoLogoFull_white.svg';
 import './style.css';
 
 export default class PaperWallet extends Component {
@@ -22,10 +22,10 @@ export default class PaperWallet extends Component {
 
     background(seed) {
       return Trianglify({
-        variance: "0.4",
-        x_colors: ['#4CAFE8', '#FEFEFE', '#4CAFE8'],
+        variance: "1",
+        x_colors: ['#000078', '#000034', '#000078'],
         width: 1024,
-        height: 768
+        height: 256
       }).png();
     }
 

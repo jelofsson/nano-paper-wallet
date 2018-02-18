@@ -39,6 +39,7 @@
 .paper-wallet--txt {
     width: 200px;
     text-align: center;
+    color: #ffffff;
     font-size: 12px;
     font-family: 'Nunito';
 }

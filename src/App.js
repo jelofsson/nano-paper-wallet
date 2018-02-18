@@ -77,7 +77,7 @@ class App extends Component {
           <PaperWallet seed={this.state.seed} account={this.state.account} />
         </p>
         <footer className="App-footer noprint">
-        <a href="https://github.com/jelofsson/nano-paper-wallet.git">Github</a> | donations are welcomed 😊 <strong>xrb_19f6pfs7hxnuk8n1zrctdhhpwso3gtnc8357ggng8iheqbh8pjrfjbaxtzjo</strong>
+        <a href="https://github.com/jelofsson/nano-paper-wallet.git">Github</a> | Buy me a coffee ☕️ <strong>xrb_19f6pfs7hxnuk8n1zrctdhhpwso3gtnc8357ggng8iheqbh8pjrfjbaxtzjo</strong>
         </footer>
       </div>
     );
