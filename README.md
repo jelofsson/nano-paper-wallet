@@ -3,6 +3,8 @@
 
 An application that allows you to generate and print a paper wallet for your Nano account.
 
+Try the [Live demo here](https://jelofsson.github.io/nano-paper-wallet).
+
 ## Build
 
 ### `npm start`

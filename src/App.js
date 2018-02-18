@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, InputGroup, InputGroupAddon, Input, Footer } from 'reactstrap';
+import { Button, InputGroup, InputGroupAddon, Input, Jumbotron } from 'reactstrap';
 import * as wallet from 'rai-wallet';
 
 import logo from './nanoLogoFull_white.svg';
@@ -14,7 +14,6 @@ class App extends Component {
   constructor(props) {
     
     super(props);
-    this.wallet = new Wallet();
     this.state = {
       seed: null,
       account: null
@@ -27,10 +26,11 @@ class App extends Component {
 
   generateNewWallet(event, seed=false) {
     try {
-      this.wallet.createWallet(seed);
+      const wallet = new Wallet();
+      wallet.createWallet(seed);
       this.setState({
-        seed: this.wallet.getSeed(),
-        account: this.wallet.getAccounts().pop()['account']
+        seed: wallet.getSeed(),
+        account: wallet.getAccounts().pop()['account']
       });
     } catch (error) {
       this.setState({
@@ -57,6 +57,10 @@ class App extends Component {
             Nano Paper Wallet Generator
           </h1>
         </header>
+        <Jumbotron className="App-jumbotron noprint">
+          Both the wallet seed and account are created on the client side.<br/>
+          Turn off your internet connection when creating your paper wallet for extra security.
+        </Jumbotron>
         <p className="noprint">
         <Button onClick={this.generateNewWallet} color="secondary" size="lg">Generate new Wallet</Button>
         <InputGroup size="lg">
