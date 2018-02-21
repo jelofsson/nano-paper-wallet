@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DropdownButton, Dropdown, MenuItem, Jumbotron, Button, InputGroup, FormControl, FormGroup } from 'react-bootstrap';
+import { DropdownButton, Dropdown, MenuItem, Alert, Button, InputGroup, FormControl, FormGroup } from 'react-bootstrap';
 import * as wallet from 'rai-wallet';
 
 import logo from './nanoLogo.svg';
@@ -63,11 +63,13 @@ class App extends Component {
             NANO Paper Wallet
           </h1>
         </header>
-        <Jumbotron className="App-jumbotron noprint">
-          Both the wallet seed and account are created on the client side.<br/>
-          Turn off your internet connection when creating your paper wallet for extra security.
-        </Jumbotron>
+
         <div className="noprint">
+
+        <Alert bsStyle="info">
+          <i>Security tip:</i> run this website in a new private window, disconnect your internet connection.
+        </Alert>
+
         <Button onClick={this.generateNewWallet} bsStyle="primary" bsSize="large">Generate new Wallet</Button>
         <FormGroup>
         <InputGroup bsSize="large">
