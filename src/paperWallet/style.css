@@ -1,6 +1,8 @@
 .paper-wallet {
     height: 350px;
     width: 1024px!Important;
+    min-width: 1024px!Important;
+    overflow: hidden;
     margin-bottom: 75px;
     background: no-repeat center;
     position: relative;
