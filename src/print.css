@@ -1,5 +1,4 @@
 @media print {
-    @page { size: landscape; }
     .noprint,
     .noprint * {
       display: none;

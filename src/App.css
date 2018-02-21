@@ -42,10 +42,14 @@
   font-size: 1.5em;
 }
 
+.App > div > *:first-child {
+  margin-top: 1rem;
+}
 .App > div > * {
+  clear: both;
   width: 80%;
   max-width: 80%;
-  margin: 20px auto 0 auto;
+  margin: 0 auto 1rem auto;
 }
 @media screen and (min-width: 1300px) {
   .App > div > * {

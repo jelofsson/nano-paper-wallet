@@ -1,14 +1,8 @@
 .paper-wallet {
     height: 350px;
-    width: 1024px!Important;
-    min-width: 1024px!Important;
-    overflow: hidden;
-    margin-bottom: 75px;
+    margin: 0 auto!Important;
     background: no-repeat center;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .paper-wallet > * {
     position: absolute;
