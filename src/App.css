@@ -73,3 +73,7 @@
 .upper {
   text-transform: uppercase;
 }
+
+.hidden {
+  display: none;
+}

@@ -1,4 +1,5 @@
 @media print {
+    @page { size: landscape; }
     .noprint,
     .noprint * {
       display: none;
@@ -10,6 +11,4 @@
     .hidden.print {
       display: block !important;
   }
-  @page { size: landscape; }
-  body {transform: scale(.5);}
 }

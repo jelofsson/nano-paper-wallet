@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { DropdownButton, Dropdown, MenuItem, Alert, Button, InputGroup, FormControl, FormGroup } from 'react-bootstrap';
 import * as wallet from 'rai-wallet';
+import domtoimage from 'dom-to-image';
 
 import logo from './nanoLogo.svg';
 import './App.css';
@@ -17,7 +18,8 @@ class App extends Component {
     this.state = {
       seed: '',
       account: '',
-      activeTheme: Themes[0]
+      activeTheme: Themes[0],
+      paperWalletImageData: ''
     };
 
     this.print = this.print.bind(this);
@@ -51,7 +53,19 @@ class App extends Component {
   }
 
   print(event) {
-    window.print();
+    var node = document.getElementsByClassName('nano-paper-wallet')[0];
+    domtoimage.toPng(node)
+        .then(function (dataUrl) {
+            var sprite = new Image();
+            sprite.onload = function () {
+              this.setState({ paperWalletImageData: dataUrl });
+              window.print();
+            }.bind(this);
+            sprite.src = dataUrl;
+        }.bind(this))
+        .catch(function (error) {
+            console.error('oops, something went wrong!', error);
+        });
   }
 
   render() {
@@ -94,10 +108,13 @@ class App extends Component {
         </DropdownButton>
         {this.state.walletTheme}
         <Button onClick={this.print} bsStyle="primary">Print</Button>
+
         </div>
-        <div className="nano-paper-wallet print">
-          <PaperWallet theme={this.state.activeTheme} seed={this.state.seed} account={this.state.account} />
-        </div>
+          <div className="nano-paper-wallet noprint">
+            <PaperWallet theme={this.state.activeTheme} seed={this.state.seed} account={this.state.account} />
+          </div>
+        <img className="nano-paper-wallet-img hidden print" src={this.state.paperWalletImageData} />
+
         <footer className="App-footer noprint">
         <a href="https://github.com/jelofsson/nano-paper-wallet.git">Github</a> | Buy me a coffee ☕️ <strong>xrb_19f6pfs7hxnuk8n1zrctdhhpwso3gtnc8357ggng8iheqbh8pjrfjbaxtzjo</strong>
         </footer>

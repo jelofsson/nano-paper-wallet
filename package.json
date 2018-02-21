@@ -6,6 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap": "^3.0.0",
+    "dom-to-image": "2.6.0",
     "qrious": "^4.0.2",
     "rai-wallet": "^0.2.2",
     "raiblocks": "^0.3.0",

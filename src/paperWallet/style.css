@@ -2,6 +2,7 @@
     height: 350px;
     width: 1024px!Important;
     margin-bottom: 75px;
+    background: no-repeat center;
     position: relative;
     display: flex;
     align-items: center;
@@ -21,6 +22,7 @@
     object-position: center; /* Center the image within the element */
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .paper-wallet--qr {
