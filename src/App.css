@@ -48,11 +48,16 @@
   max-width: 80%;
   margin: 20px auto 0 auto;
 }
+@media screen and (min-width: 1300px) {
+  .App > div > * {
+    width: 1000px;
+    max-width: 1000px;
+  }
+}
 @media print {
   .App > div > * {
     width: 100%;
     max-width: 100%;
-    margin: 20px auto 0 auto;
   }
 }
 
