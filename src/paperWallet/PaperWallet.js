@@ -1,6 +1,5 @@
 
 import React, { Component } from 'react';
-import * as Trianglify from 'trianglify';
 import QrImage from './qrImage.js';
 import './style.css';
 
@@ -14,20 +13,6 @@ export default class PaperWallet extends Component {
             qr: 'hello',
             color: '#0000ff',
         };
-
-        this.background = this.background.bind(this);
-    }
-
-    componentDidMount() {
-    }
-
-    background(seed) {
-      return Trianglify({
-        variance: "1",
-        x_colors: ['#000078', '#000034', '#000078'],
-        width: 1024,
-        height: 270
-      }).png();
     }
 
     render() {
