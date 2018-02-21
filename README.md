@@ -3,26 +3,24 @@
 
 An application that allows you to generate and print a paper wallet for your Nano account.
 
-Try the [Live demo here](https://jelofsson.github.io/nano-paper-wallet).
+Try the [live demo here](https://jelofsson.github.io/nano-paper-wallet).
 
 Im using [rai-wallet](https://www.npmjs.com/package/rai-wallet) lib made by jaimehgb  to generate a wallet seed and account on client side.
 
-Thanks to Lucas for lending me your [NANO-4k-Wallpapers](https://www.behance.net/gallery/61543179/NANO-4k-Wallpapers) as wallet pictures
+Thanks to Lucas for lending me your [NANO-4k-Wallpapers](https://www.behance.net/gallery/61543179/NANO-4k-Wallpapers) as wallet pictures.
 
-## Build
+## Installation
 
-### `npm start`
+####`git clone https://github.com/jelofsson/nano-paper-wallet.git`
 
-Runs the app in the development mode.<br>
+####`cd nano-paper-wallet && npm install`
+
+## Run application
+
+####`npm start`
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
@@ -31,8 +29,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
-
-See the section about [deployment](#deployment) for more information.
 
 ## Warning
 

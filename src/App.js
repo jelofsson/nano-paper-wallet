@@ -28,6 +28,10 @@ class App extends Component {
     this.generateNewWallet = this.generateNewWallet.bind(this);
   }
 
+  componentDidMount() {
+    this.generateNewWallet(null, false);
+  }
+
   selectTheme(eventKey, event) {
     this.setState({ activeTheme: Themes[eventKey] });
   }
