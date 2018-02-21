@@ -5,7 +5,7 @@ An application that allows you to generate and print a paper wallet for your Nan
 
 Try the [Live demo here](https://jelofsson.github.io/nano-paper-wallet).
 
-Thanks Lucas for lending me your [NANO-4k-Wallpapers](https://www.behance.net/gallery/61543179/NANO-4k-Wallpapers) as wallet pictures
+Thanks to Lucas for lending me your [NANO-4k-Wallpapers](https://www.behance.net/gallery/61543179/NANO-4k-Wallpapers) as wallet pictures
 
 ## Build
 
@@ -36,7 +36,7 @@ See the section about [deployment](#deployment) for more information.
 
 Be very careful when using this application. I'm not responsible for any bugs that might generate insecure wallets. Use at your own risk.
 
-Find this useful? Send me a donation at xrb_19f6pfs7hxnuk8n1zrctdhhpwso3gtnc8357ggng8iheqbh8pjrfjbaxtzjo
+Find this useful? Send me a donation at `xrb_19f6pfs7hxnuk8n1zrctdhhpwso3gtnc8357ggng8iheqbh8pjrfjbaxtzjo`
 
 ## License
 
