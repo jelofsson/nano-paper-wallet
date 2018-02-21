@@ -15,7 +15,12 @@
 .env.development.local
 .env.test.local
 .env.production.local
+*.kra
 
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# lockfiles
+*.lock
+*lock.json

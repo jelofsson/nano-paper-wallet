@@ -1,6 +1,6 @@
 .paper-wallet {
-    height: 265px;
-    width: 100%;
+    height: 350px;
+    width: 1024px!Important;
     position: relative;
     display: flex;
     align-items: center;
@@ -16,38 +16,33 @@
 }
 
 .paper-wallet--background {
-    left: 0;
-    top: 0;
-    width: 100%;
+    object-fit: none; /* Do not scale the image */
+    object-position: center; /* Center the image within the element */
     height: 100%;
+    width: 100%;
 }
 
 .paper-wallet--qr {
-    top: 40px;
+    top: 80px;
     height: 200px;
     width: 200px;
     padding: 4px;
     background-color: #ffffff;
 }
-.paper-wallet--pvt-seed-qr {
-    left: 5%;
+.paper-wallet--pvt-seed-qr,
+.paper-wallet--pvt-seed-txt {
+    left: 60px;
 }
-.paper-wallet--pub-addr-qr {
-    right: 5%;
+.paper-wallet--pub-addr-qr,
+.paper-wallet--pub-addr-txt {
+    right: 60px;
 }
 
 .paper-wallet--txt {
+    top: 55px;
     width: 200px;
     text-align: center;
     color: #ffffff;
     font-size: 12px;
     font-family: 'Nunito';
-}
-.paper-wallet--pvt-seed-txt {
-    left: 5%;
-    top: 5%;
-}
-.paper-wallet--pub-addr-txt {
-    right: 5%;
-    top: 5%;
 }

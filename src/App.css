@@ -5,8 +5,8 @@
 }
 
 .App-logo {
-  width: 50%;
-  max-width: 80%;
+  height: 3vw;
+  margin-right: 1vw;
 }
 
 .App-header {
@@ -19,7 +19,11 @@
 }
 
 .App-title {
-  display: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 3vw;
+  margin: 0;
 }
 
 .App-intro {
@@ -39,10 +43,17 @@
   font-size: 1.5em;
 }
 
-.App > p > * {
+.App > div > * {
   width: 80%;
   max-width: 80%;
   margin: 20px auto 0 auto;
+}
+@media print {
+  .App > div > * {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto 0 auto;
+  }
 }
 
 .konvajs-content {
