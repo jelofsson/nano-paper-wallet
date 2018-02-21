@@ -70,21 +70,20 @@ class App extends Component {
           <i>Security tip:</i> run this website in a new private window, disconnect your internet connection.
         </Alert>
 
-        <Button onClick={this.generateNewWallet} bsStyle="primary" bsSize="large">Generate new Wallet</Button>
+        <Button onClick={this.generateNewWallet} bsStyle="primary">Generate new Wallet</Button>
         <FormGroup>
-        <InputGroup bsSize="large">
+        <InputGroup>
           <InputGroup.Addon>Private Seed</InputGroup.Addon>
           <FormControl type="text" className="upper" value={this.state.seed} onChange={this.handleSeedChange} placeholder="" />
         </InputGroup>
         </FormGroup>
         <FormGroup>
-        <InputGroup bsSize="large">
+        <InputGroup>
           <InputGroup.Addon>Public Account</InputGroup.Addon>
           <FormControl type="text" value={this.state.account} placeholder="" />
         </InputGroup>
         </FormGroup>
-        <DropdownButton
-          bsSize="large"
+        <DropdownButton 
           title={"Theme - " + this.state.activeTheme.name}
           key={this.state.walletTheme}
           id={`dropdown-basic-${this.state.walletTheme}`}
@@ -94,7 +93,7 @@ class App extends Component {
           }.bind(this))}
         </DropdownButton>
         {this.state.walletTheme}
-        <Button onClick={this.print} bsStyle="primary" bsSize="large">Print</Button>
+        <Button onClick={this.print} bsStyle="primary">Print</Button>
         </div>
         <div className="nano-paper-wallet print">
           <PaperWallet theme={this.state.activeTheme} seed={this.state.seed} account={this.state.account} />
