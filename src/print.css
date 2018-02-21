@@ -10,4 +10,6 @@
     .hidden.print {
       display: block !important;
   }
+  @page { size: landscape; }
+  body {transform: scale(.5);}
 }

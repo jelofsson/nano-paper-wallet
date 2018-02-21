@@ -1,6 +1,7 @@
 .paper-wallet {
     height: 350px;
     width: 1024px!Important;
+    margin-bottom: 75px;
     position: relative;
     display: flex;
     align-items: center;
