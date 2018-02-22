@@ -7,7 +7,7 @@ Try the [live demo here](https://jelofsson.github.io/nano-paper-wallet).
 
 ## Install and run application locally
 
-Download [the zip here](https://github.com/jelofsson/nano-paper-wallet/blob/master/nano-paper-wallet.zip)
+Download [the zip here](https://github.com/jelofsson/nano-paper-wallet/raw/master/nano-paper-wallet.zip)
 
 disconnect your internet connection, extract the zip and open index.html in an safe OS environment.
 

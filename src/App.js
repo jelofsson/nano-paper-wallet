@@ -85,7 +85,7 @@ class App extends Component {
         <div className="noprint">
 
         <Alert bsStyle="info">
-          <a href="https://github.com/jelofsson/nano-paper-wallet/blob/master/nano-paper-wallet.zip">download zip of this website here</a> - disconnect your internet connection, extract the zip and open index.html in an safe OS environment.
+          <a href="https://github.com/jelofsson/nano-paper-wallet/raw/master/nano-paper-wallet.zip">download zip of this website here</a> - disconnect your internet connection, extract the zip and open index.html in an safe OS environment.
         </Alert>
 
         <Button onClick={this.generateNewWallet} bsStyle="primary">Generate new Wallet</Button>
