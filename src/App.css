@@ -80,3 +80,7 @@
 .hidden {
   display: none;
 }
+
+.alert > a {
+  text-decoration: underline;
+}
