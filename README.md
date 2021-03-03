@@ -33,8 +33,5 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-## Warning
 
-Be very careful when using this application. I'm not responsible if any mistakes or errors occur. Use at your own risk.
-
-Find this useful? Send me a donation at `xrb_19f6pfs7hxnuk8n1zrctdhhpwso3gtnc8357ggng8iheqbh8pjrfjbaxtzjo`
+Find this useful? Send me a donation at `nano_19f6pfs7hxnuk8n1zrctdhhpwso3gtnc8357ggng8iheqbh8pjrfjbaxtzjo`
